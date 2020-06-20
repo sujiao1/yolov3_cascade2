@@ -1,0 +1,13 @@
+cfg_model=yolo-tiny
+classes=1
+gpus = 0
+num_workers = 8
+batch_size = 6
+img_size = 416
+multi_scale = True
+epochs = 100
+train=./datasets_dogs/anno/train.txt
+valid=./datasets_dogs/anno/train.txt
+names=./cfg/voc_dog.names
+finetune_model=./weights-yolov3/latest.pt
+lr_step = 30,40,60

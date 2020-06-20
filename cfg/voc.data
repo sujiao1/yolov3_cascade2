@@ -1,0 +1,12 @@
+cfg=yolov3
+classes=80
+gpus = 0,1,2,3
+num_workers = 1
+batch_size = 4
+img_size = 416
+multi_scale = True
+epochs = 300
+train=./datasets/train.txt
+valid=./datasets/test.txt
+names=./cfg/voc.names
+finetune_model=./coco_model/yolov3_coco.pt
